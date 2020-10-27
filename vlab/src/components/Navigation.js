@@ -14,8 +14,7 @@ export class Navigation extends Component {
     render() {
 
         return (
-            <div className="container-fluid">
-                <Navbar bg="dark" expand="lg">
+                <Navbar bg="dark" expand="lg" className="row">
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto justify-content-between">
@@ -30,7 +29,6 @@ export class Navigation extends Component {
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
-            </div>
         );
     }
 }
