@@ -13,13 +13,6 @@ function App() {
     <BrowserRouter>
       <div className="container">
 
-        <h3 className="m-3 d-flex justify-content-center">
-          Vlab Demo
-        </h3>
-        <h5 className="m-3 d-flex justify-content-center">
-          Vlab Portal
-        </h5>
-
         <Navigation/>
 
         <Switch>
