@@ -1,36 +1,36 @@
 import React , {Component} from 'react';
 import {NavLink} from 'react-router-dom';
-import {Navbar, Nav} from 'react-bootstrap'
+import {Navbar, Nav} from 'react-bootstrap';
 
 export class Navigation extends Component {
   
     styles =  {
         height: 50,
-        // hover: {
-        //     transform: scale(1.5)
-        // }
+        width: 100,
+        height: 100,
     };
+    
 //https://picsum.photos/200
     render() {
 
         return (
-            <Navbar bg="dark" expand="lg">
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav>
-                        <NavLink className="d-inline p-2 bg-dark text-white"
-                        to="/">
-                            <div class="view overlay zoom">
-                            <img style={this.styles} src="./homeIcon.jpg" className="img-responsive" />
-                            </div>
-                        </NavLink>
-                        <NavLink className="d-inline p-2 bg-dark text-white"
-                        to="/page1"><img style={this.styles} src="https://picsum.photos/200" className="img-responsive" /></NavLink>
-                        <NavLink className="d-inline p-2 bg-dark text-white"
-                        to="/page2"><img style={this.styles} src="https://picsum.photos/200" className="img-responsive" /></NavLink>
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
+            <div className="container-fluid">
+                <Navbar bg="dark" expand="lg">
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="ml-auto justify-content-between">
+                            <NavLink className="d-inline p-2 bg-dark text-white"
+                            to="/">
+                                <img style={this.styles} src="./Title.png" className="img-responsive " />
+                            </NavLink>
+                            <NavLink className="d-inline p-2 bg-dark text-white"
+                            to="/page1"><img style={this.styles} src="./Theoryy.png" className="img-responsive" /></NavLink>
+                            <NavLink className="d-inline p-2 bg-dark text-white"
+                            to="/page2"><img style={this.styles} src="caseStudy.png" className="img-responsive" /></NavLink>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
+            </div>
         );
     }
 }
