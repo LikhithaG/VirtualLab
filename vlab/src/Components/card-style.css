@@ -1,13 +1,14 @@
-body{
-    /* background: radial-gradient(#e5e5e5, #ffff, #e5e5e5); */
-}
-
 .card{
     width: 20rem;
 }
 
 .card:hover{
     box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.253)!important;
+}
+
+img{
+    top:0;
+    margin: 0;
 }
 
 .card-body{
@@ -38,6 +39,12 @@ body{
 
 .card-img-top:hover {
     transform: scale(1.8);
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  margin: 0;
 }
 
 .theory{

@@ -4,10 +4,11 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 import Cards from './Components/cardsUI';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Cards />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
