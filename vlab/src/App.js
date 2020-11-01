@@ -5,23 +5,25 @@ import './App.css';
 // import {Page1} from './Components/Page1';
 // import {Page2} from './Components/Page2';
 import { Navigation } from './Components/Navigation';
+import Intro from './Components/Introduction';
 import Cards from './Components/cardsUI';
+import "./Components/card-style.css";
 
 import {BrowserRouter, NavLink, Route, Switch} from 'react-router-dom';
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="container-fluid">
-
+      <div className="container-fluid universal">
+        <div>
         <Navigation/>
-
-        {/* <Switch>
-          <Route path='/' component={Home} exact />
-          <Route path='/page1' component={Page1} exact />
-          <Route path='/page2' component={Page2} exact />
-        </Switch> */}
-        <Cards/>
+        <Switch>
+          <Route path='/' component={Intro} exact />
+          <Route path='/Theory' component={Cards} exact />
+          {/* <Route path='/page2' component={Page2} exact /> */}
+          </Switch>
+          </div>
+        {/* <Cards/> */}
       </div>
     </BrowserRouter>
     
