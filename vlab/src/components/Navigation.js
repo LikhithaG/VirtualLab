@@ -14,7 +14,7 @@ export class Navigation extends Component {
     render() {
 
         return (
-                <Navbar bg="dark" expand="lg" className="row">
+                <Navbar bg="dark" expand="lg" className="row navbar navbar-default navbar-fixed-top" id="mNavbar">
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto justify-content-between">
