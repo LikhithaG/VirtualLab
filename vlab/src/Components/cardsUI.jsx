@@ -30,9 +30,9 @@ class Cards extends Component {
   render() {
     return (
       <div>
-        <div className="row">
+        {/* <div className="row"> */}
           {/* <div class="TriangleUp-rlo4cd-0 dnAhJF"></div> */}
-        </div>
+        {/* </div> */}
         {/* <div class="SecondSection__Container-sc-1q57cd9-1 eSmTCo"> */}
         <div className="container-fluid d-flex justify-content-center">
           <div className="row">

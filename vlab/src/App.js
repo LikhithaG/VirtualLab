@@ -14,8 +14,8 @@ import {BrowserRouter, NavLink, Route, Switch} from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter>
-      <div className="container-fluid universal">
-        <div>
+      <div className="container-fluid">
+        <div className="universal">
         <Navigation/>
         <Switch>
           <Route path='/' component={Intro} exact />

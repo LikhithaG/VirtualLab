@@ -7,6 +7,8 @@ class Intro extends Component {
       <div>
         <div className="row">
           <h1>Introduction</h1>
+        </div>
+        <div>
           <p>
             After gathering the entire requirements specific to software project
             usually we need to think about different solution strategy for the
