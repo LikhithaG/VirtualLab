@@ -26,6 +26,7 @@ function q2() {
                             <br></br>
                             <input type="radio" name="q1" value=" Considering their maximum " /> Considering their maximum 
                         </div>
+                        <h1></h1>
                         <br></br>
                         <br></br>
                     </form>
