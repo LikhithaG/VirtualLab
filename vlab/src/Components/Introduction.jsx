@@ -6,7 +6,7 @@ class Intro extends Component {
     return (
       <div>
         <div className="row">
-          <h1>Introduction</h1>
+          <h1 style={{marginTop: 2 + 'em'}}>Introduction</h1>
         </div>
         <div>
           <p>

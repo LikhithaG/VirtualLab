@@ -16,7 +16,8 @@ export class Navigation extends Component {
   render() {
     return (
       // <div className="container-fluid">
-      <Navbar bg="dark" expand="lg" className="sticky-nav" data-spy="affix" data-offset-top="197">
+      <Navbar bg="dark" expand="lg" style={{position: 'fixed', width: '100%', zIndex: 100}}
+       className="sticky-nav" data-spy="affix" data-offset-top="197">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto justify-content-between">
@@ -35,7 +36,6 @@ export class Navigation extends Component {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      // </div>
     );
   }
 }
