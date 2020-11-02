@@ -21,16 +21,13 @@ export class Navigation extends Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto justify-content-between">
-            <NavLink className="d-inline p-2 bg-dark text-white" to="/">
+            <NavLink className="d-inline p-2 bg-dark text-white" to="/" style={{marginTop: 1 + 'em'}}>
               <img style={this.styles} src={img3} className="img-responsive" />
             </NavLink>
-            <NavLink className="d-inline p-2 bg-dark text-white" to="/Theory">
+            <NavLink className="d-inline p-2 bg-dark text-white" to="/Theory" style={{marginTop: 1 + 'em'}}>
               <img style={this.styles} src={img1} className="img-responsive" />
             </NavLink>
-            <NavLink
-              className="d-inline p-2 bg-dark text-white"
-              to="/Excersise"
-            >
+            <NavLink className="d-inline p-2 bg-dark text-white"to="/Self_Evaluation" style={{marginTop: 1 + 'em'}}>
               <img style={this.styles} src={img2} className="img-responsive" />
             </NavLink>
           </Nav>

@@ -7,27 +7,28 @@ import './App.css';
 import { Navigation } from './Components/Navigation';
 import Intro from './Components/Introduction';
 import Cards from './Components/cardsUI';
-import "./Components/card-style.css";
+import FlipCards from './Components/FlipCards';
+import './Components/card-style.css';
 
-import {BrowserRouter, NavLink, Route, Switch} from 'react-router-dom';
+import { BrowserRouter, NavLink, Route, Switch } from 'react-router-dom';
 
 function App() {
-  return (
-    <BrowserRouter>
-      <div className="container-fluid">
-        <div className="universal">
-        <Navigation/>
-        <Switch>
-          <Route path='/' component={Intro} exact />
-          <Route path='/Theory' component={Cards} exact />
-          {/* <Route path='/page2' component={Page2} exact /> */}
-          </Switch>
-          </div>
-        {/* <Cards/> */}
-      </div>
-    </BrowserRouter>
-    
-  );
+	return (
+		<BrowserRouter>
+			<div className="container-fluid">
+				<div className="universal">
+					<Navigation />
+					<Switch>
+						<Route path="/" component={Intro} exact />
+						<Route path="/Theory" component={Cards} exact />
+						<Route path="/Self_Evaluation" component={FlipCards} exact />
+						{/* <Route path='/page2' component={Page2} exact /> */}
+					</Switch>
+				</div>
+				{/* <Cards/> */}
+			</div>
+		</BrowserRouter>
+	);
 }
 
 export default App;
