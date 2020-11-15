@@ -25,7 +25,7 @@ class Keywords extends Component {
 						</div>
 					</div>
 
-					<div className="row comp">
+					<div className="row">
 						<div class="content col-md-8">
 							<h5>Business Owner:</h5>
 							<p>
@@ -46,8 +46,10 @@ class Keywords extends Component {
 						<div class="content col-md-8">
 							<h5>Team Members:</h5>
 							<p>
-								it consists of people from development, testing, designing teams. These people
+								It consists of people from development, testing, designing teams. These people
 								participate in estimation and give their reviews about the project as per their fields.
+								If team members have differences in their view about the estimation, then multiple
+								rounds of cards choosing followed by discussion takes place.
 							</p>
 						</div>
 					</div>

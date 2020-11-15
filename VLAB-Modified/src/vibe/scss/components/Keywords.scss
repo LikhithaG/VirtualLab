@@ -18,28 +18,34 @@
 // .imgBx2 {
 // 	float: right;
 // }
+.row {
+	height: 30%;
+}
 .comp {
 	padding-bottom: 5%;
 }
-.comp .imgBx2 img {
+.row .imgBx2 img {
 	height: 80%;
 	width: 80%;
 	//display: inline-block;
 	float: right;
 }
-.comp .imgBx2 {
+.row .imgBx2 {
 	//width: 40%;
 	height: 80%;
 	float: right;
 }
-.comp .imgBx1 {
+.row .imgBx1 {
 	width: 50%;
 	height: 50%;
 	float: left;
 }
-.teams {
+.row .content {
 	height: 50%;
 }
+// .teams {
+// 	height: 20%;
+// }
 /*
 .rowC {
 	display: flex;
