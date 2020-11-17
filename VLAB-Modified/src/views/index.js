@@ -1,5 +1,6 @@
 import Dashboard from './pages/Dashboard';
 import Estimation from "./elements/Estimation";
+import Experiments from "./elements/Experiment";
 import Delphi from "./elements/Delphi";
 import ErrorPage from './pages/404';
 
@@ -18,6 +19,11 @@ const pageList = [
     name: "Delphi",
     path: "/elements/delphi",
     component: Delphi,
+  },
+  {
+    name: "Experiment",
+    path: "/elements/experiment",
+    component: Experiments,
   },
   {
     name: "404",

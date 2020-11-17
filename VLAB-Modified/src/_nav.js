@@ -28,7 +28,7 @@ export default {
     {
       name: "Experiments",
       // icon: "File",
-      url: "/home",
+      url: "/elements/experiment",
     },
     {
       name: "Exercise",
