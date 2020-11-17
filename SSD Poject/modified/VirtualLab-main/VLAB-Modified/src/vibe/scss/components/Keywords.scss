@@ -1,0 +1,85 @@
+.sample-body {
+	display: flex;
+	justify-content: left;
+	align-items: left;
+}
+
+.container {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: left;
+	flex-wrap: wrap;
+}
+// img {
+// 	height: 90%;
+// }
+
+// .imgBx2 {
+// 	float: right;
+// }
+.row {
+	height: 30%;
+}
+.comp {
+	padding-bottom: 5%;
+}
+.row .imgBx2 img {
+	height: 80%;
+	width: 80%;
+	//display: inline-block;
+	float: right;
+}
+.row .imgBx2 {
+	//width: 40%;
+	height: 80%;
+	float: right;
+}
+.row .imgBx1 {
+	width: 50%;
+	height: 50%;
+	float: left;
+}
+.row .content {
+	height: 50%;
+}
+// .teams {
+// 	height: 20%;
+// }
+/*
+.rowC {
+	display: flex;
+	flex-direction: row;
+}
+
+.container .card {
+	position: relative;
+	display: flex;
+}
+
+.container .card .imgBx {
+	flex: 0 0 150px;
+}
+
+.container .card .imgBx img {
+	max-width: 100%;
+}
+
+.container .card .content {
+	margin-left: 20px;
+}
+*/
+@media (max-width: 991px) {
+	.container {
+		flex-direction: column;
+	}
+	.container .card {
+		flex-direction: column;
+	}
+	.container .card .imgBx {
+		max-width: 100%;
+	}
+	.container .card .content {
+		margin-left: 20px;
+	}
+}
