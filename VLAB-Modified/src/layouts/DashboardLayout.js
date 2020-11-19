@@ -2,12 +2,7 @@ import React, { Component } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import {
   Button,
-  Badge,
   NavItem,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
 } from "reactstrap";
 import { Header, SidebarNav, PageContent, PageAlert, Page } from "../vibe";
 import nav from "../_nav";

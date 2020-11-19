@@ -3,6 +3,7 @@ import Estimation from "./elements/Estimation";
 import Experiments from "./elements/Experiment";
 import Delphi from "./elements/Delphi";
 import ErrorPage from './pages/404';
+import Excersice from "./elements/Excersice";
 
 const pageList = [
   {
@@ -19,6 +20,11 @@ const pageList = [
     name: "Delphi",
     path: "/elements/delphi",
     component: Delphi,
+  },
+  {
+    name: "Excersice",
+    path: "/elements/excersice",
+    component: Excersice,
   },
   {
     name: "Experiment",

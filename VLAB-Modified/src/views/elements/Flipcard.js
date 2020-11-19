@@ -12,7 +12,7 @@ function Flipcard(props) {
     if (isContent) {
       return (
         <div>
-          <img src={props.isContent} onClick={handleClick}></img>          
+          <img src={props.isContent} onClick={handleClick} alt={props.alt}></img>          
         </div>
       );
     } else {
@@ -50,7 +50,7 @@ function Flipcard(props) {
     >
       <div className="question">
         <div>
-          <img src={props.src} onClick={handleClick}></img>
+          <img src={props.src} onClick={handleClick} alt={props.alt}></img>
         </div>
       </div>
       <div className="question">

@@ -6,22 +6,28 @@ import img8 from "../../assets/images/8.jpg";
 import img2 from "../../assets/images/2.jpg";
 import img5 from "../../assets/images/5.jpg";
 import img3 from "../../assets/images/3.jpg";
+import img20 from "../../assets/images/20.jpg";
+import img13 from "../../assets/images/13.jpg";
 import tick from "../../assets/images/tick.jpg";
 import poker from "../../assets/images/planning poker.jpg";
+import cross from "../../assets/images/cross.jpg";
+import login from "../../assets/images/login.png";
 
 class Delphi extends Component {
   state = {};
+
   render() {
     return (
       <div>
-        <h1>Delphi estimation</h1>
+        <h1>Delphi estimation (Planning poker)</h1>
+        <br />
         <p>
           The Wideband Delphi estimation method is a consensus-based technique
           for estimating effort. It derives from the Delphi method which was
           developed in the 1950-1960s at the RAND Corporation as a forecasting
           tool.
         </p>
-        <br></br>
+        <br />
         <p>
           Wideband delphi should acheive a better estimate than individual
           estimation because it focuses on involving multiple experts, and
@@ -30,10 +36,11 @@ class Delphi extends Component {
           also encourages break down of the item to be estimated into smaller
           items, another good method to improve the accuracy of the estimates.
         </p>
-        <br></br>
-        <h4>Components</h4>
-        <Keywords/>
-        <br></br>
+        <br />
+        <h2>Components</h2>
+        <br />
+        <Keywords />
+        <br />
         <h2>How does wideband delphi work?</h2>
         <p>
           Wideband delphi is a very simple process. You need an estimation
@@ -41,94 +48,144 @@ class Delphi extends Component {
           many estimators as discussions will be longer and consensus will be
           more difficult to reach.
         </p>
-        <h5>Step 1: Kickoff meeting</h5>
+        <h5>Step 1: </h5>
         <ul>
           <li>
-            In the kickoff meeting describe the project to be estimated and its
-            requirements to all estimators. Answer any questions raised to
-            clarify the project as much as possible.
+            Every person in team holds a deck of planning cards. Each card holds
+            a number like – 1, 2, 3, 5, 8, 13, 20, 40, 100 ... A sequence of
+            fibbonacci series numbers.
           </li>
         </ul>
-        <h5>Step 2: Individual estimation</h5>
+        <h5>Step 2: </h5>
         <ul>
           <li>
-            Each estimator breaks down the project into tasks, and estimates the
-            tasks. These individual estimates must be written down.
+            Product owner or customer reads an agile user story or decribes a
+            feature to estimators. ‘Estimators’ means the whole team, comprising
+            representation from management, technical department, financial,
+            human resource etc.
           </li>
         </ul>
         <br></br>
-        <img src={poker} className="img-fluid mx-auto d-block"></img>
+        <img
+          src={poker}
+          className="img-fluid mx-auto d-block"
+          alt="poker"
+        ></img>
         <br></br>
-        <h5>Step 3: Discussion meeting</h5>
+        <h5>Step 3: </h5>
         <ul>
           <li>
-            Hold a meeting where estimators present their estimates and discuss
-            reasons for the estimates. Because some estimators will see problems
-            or solutions that others did not, the discussion ensures that during
-            the next round of estimation each estimator will take more
-            information into account in their estimates.
+            Estimators discuss the feature among themselves to understand all of
+            its aspects.
           </li>
         </ul>
-        <h5>Step 4: Repeat</h5>
+        <h5>Step 4: </h5>
+        <ul>
+          <li>Then all the estimators select a card and reveals it.</li>
+          <ul>
+            <li>
+              If all the cards have same number then that card number becomes
+              the estimate for that user story.
+            </li>
+            <li>
+              Else estimators with outlier numbers are asked about their
+              reasoning and after further discussions each estimator again
+              selects a card. (Repeat Step 4.)
+            </li>
+          </ul>
+        </ul>
+        <h5>Step 5: </h5>
         <ul>
           <li>
-            Repeat steps 2 and 3 as many times as necessary to obtain an
-            estimate range with an acceptable level of variation between
-            experts.
+            If majority of estimators lean on paticular number (say 8), then 8
+            is selected as the estimate.
           </li>
         </ul>
-        <Player />
+        <Player url="https://www.youtube.com/watch?v=TxSzo3lwwWQ" />
         <br></br>
-        <h3>Variations</h3>
-        <p>
-          When you understand that the key to wideband delphi is the combination
-          of multiple estimates by discussion, you can easily vary the process
-          to suit your environment. Some simple variations might be:
-        </p>
-        <h5>1. Provide a common task breakdown in the kickoff meeting.</h5>
-        <p>
-          With each estimator working on the same breakdown discussion can be
-          focused on the estimates, rather than being split between estimates
-          and breakdown. Estimators should still be able to add tasks to the
-          breakdown to capture any additional work overlooked in the original
-          breakdown.
-        </p>
-        <h5>2. Perform everything in one meeting. </h5>
-        <p>
-          By completing individual estimates and discussions in the same meeting
-          time can be saved, particularly on small projects. It is still
-          important however that each estimator estimates individually, writes
-          their estimates down, and discussion only takes place after all have
-          finished their individual estimation.
-        </p>
-        <h5>3. Come to a group consensus rather than multiple rounds</h5>
-        <p>
-          You could also have only a single round of estimation, with the
-          discussion afterwards targeted to come to a single group consensus.
-          The consensus can be in the form of a range which can limit the length
-          of the meeting.
-        </p>
-        <p>
-          Wideband delphi is more robust than a single estimator coming up with
-          a number. It has a number of similarities to agile planning poker,
-          however it is different in that estimates for all tasks are completed
-          up front individually rather than estimating and reaching consensus on
-          each task one at a time.
-        </p>
+        <h3>Exercise</h3>
+        <h5>Scenario :</h5>
+        <p>Modules to be developed:</p>
+        <ul>
+          <li>Text input for username and password</li>
+          <li>A submit button</li>
+          <li>Validating user when button is clicked</li>
+          <li>
+            Showing relevant message to user in both the cases of success or
+            failure
+          </li>
+        </ul>
+        <img
+          src={login}
+          alt="login page"
+          style={{ width: "800px", height: "400px" }}
+        ></img>
+        <p></p>
+        Let us practise how we can choose the days from planning poker
+        <ul>
+          <li>Here card 2 indicates 2 to 5 days for the taks</li>
+          <li>Here card 3 indicates 6 to 15 days for the taks</li>
+          <li>Here card 5 indicates 16 to 30 days for the taks</li>
+          <li>Here card 8 indicates 31 to 50 days for the taks</li>
+          <li>Here card 13 indicates 50 to 100 days for the taks</li>
+          <li>Here card 20 indicates 100 to 200 days for the taks</li>
+        </ul>
         <div className="row">
-          <div class="col-sm-3">
+          <div class="col-sm-2">
             <Flipcard src={img2} flip={tick} />
           </div>
-          <div class="col-sm-3">
-            <Flipcard src={img3} />
+          <div class="col-sm-2">
+            <Flipcard src={img3} flip={cross} />
           </div>
-          <div class="col-sm-3">
-            <Flipcard src={img5} />
+          <div class="col-sm-2">
+            <Flipcard src={img5} flip={cross} />
           </div>
-          <div class="col-sm-3">
-            <Flipcard src={img8} />
+          <div class="col-sm-2">
+            <Flipcard src={img8} flip={cross} />
+          </div>
+          <div class="col-sm-2">
+            <Flipcard src={img13} flip={cross} />
+          </div>
+          <div class="col-sm-2">
+            <Flipcard src={img20} flip={cross} />
           </div>
         </div>
+        <br />
+        <Hints />
+        <br />
+        <br />
+        <h3>Special Case: </h3>
+        <p>
+          If half of the estimator select a number ‘x’ and other half selects a
+          number ‘y’. Then we select max(x,y) as the estimate for that story
+          point.
+        </p>
+        <h3>Technical Uncertainity: </h3>
+        <p>
+          After various round of dicussions, the difference between the
+          estimations made by estimators is still large. Then it is a Product
+          Uncertaininty / Technical Uncertainity. Thus, estimation of that story
+          point is done after a thorough research.
+        </p>
+      </div>
+    );
+  }
+}
+
+class Hints extends Component {
+  state = {
+    showMessage: false,
+  };
+  onButtonClickHandler = () => {
+    this.setState({ showMessage: true });
+  };
+  render() {
+    return (
+      <div>
+        <button onClick={this.onButtonClickHandler} className="float-right">
+          Hints
+        </button>
+        {this.state.showMessage && <p>something</p>}
       </div>
     );
   }

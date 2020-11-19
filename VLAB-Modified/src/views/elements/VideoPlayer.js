@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactPlayer from "react-player";
 
-function Player() {
+function Player(props) {
     return (
       <div className="d-flex justify-content-center">
         <ReactPlayer
-          url="https://www.youtube.com/watch?v=MrIZMuvjTws"
+          url={props.url}
           controls={true}
         />
       </div>

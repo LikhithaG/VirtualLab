@@ -33,7 +33,7 @@ export default {
     {
       name: "Exercise",
       // icon: "Cloud",
-      url: "/home",
+      url: "/elements/excersice",
     },
   ],
 };
