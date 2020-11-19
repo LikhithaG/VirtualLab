@@ -10,65 +10,29 @@
 	justify-content: space-between;
 	align-items: left;
 	flex-wrap: wrap;
+	//height: 70%;
 }
-// img {
-// 	height: 90%;
-// }
-
-// .imgBx2 {
-// 	float: right;
-// }
-.row {
-	height: 30%;
-}
-.comp {
-	padding-bottom: 5%;
-}
-.row .imgBx2 img {
-	height: 80%;
-	width: 80%;
-	//display: inline-block;
-	float: right;
-}
-.row .imgBx2 {
-	//width: 40%;
-	height: 80%;
-	float: right;
-}
-.row .imgBx1 {
-	width: 50%;
-	height: 50%;
-	float: left;
-}
-.row .content {
-	height: 50%;
-}
-// .teams {
-// 	height: 20%;
-// }
-/*
-.rowC {
-	display: flex;
-	flex-direction: row;
+.imgBx {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.container .card {
-	position: relative;
-	display: flex;
+.imgBx2 {
+	height: 60%;
+	width: 60%;
+	padding-top: 5%;
 }
 
-.container .card .imgBx {
-	flex: 0 0 150px;
-}
-
-.container .card .imgBx img {
+img {
 	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	flex-shrink: 0;
 }
 
-.container .card .content {
-	margin-left: 20px;
-}
-*/
 @media (max-width: 991px) {
 	.container {
 		flex-direction: column;
