@@ -33,6 +33,10 @@ img {
 	flex-shrink: 0;
 }
 
+.toolTip p {
+	font-size: 16px;
+}
+
 @media (max-width: 991px) {
 	.container {
 		flex-direction: column;
